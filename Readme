@@ -1,0 +1,8 @@
+This is a demo about how to use MPI to implement task bag parallel pattern.
+A farmer process is used to manages tasks, and several worker processes are used to finish tasks and generate new tasks.
+I hope it may help you in some parallel programming coursework or practical use.
+I finished this in spring, but at that time I have not a Github account.
+
+Note: there are some known unimplemented improvements for this code:
+1. If a worker generates two new tasks, sends one to the farmer and finish the other, instead of sending both to the farmer.
+2. Not all message tags are useful.
